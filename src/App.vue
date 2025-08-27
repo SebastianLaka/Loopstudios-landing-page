@@ -17,7 +17,8 @@ import TheWelcome from './components/TheWelcome.vue'
   </main>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+$red: red;
 header {
   line-height: 1.5;
 }
@@ -42,6 +43,8 @@ header {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    
   }
+
 }
 </style>
