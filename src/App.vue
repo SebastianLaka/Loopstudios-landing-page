@@ -6,7 +6,8 @@
  <p>hello</p>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
+@import "./assets/sass/reset.scss";
 p{
   font-family: "Josefin Sans" ,sans-serif;
 }
