@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss">
-@import "./assets/sass/reset.scss";
+@import "./assets/sass/_reset.scss";
 p{
   font-family: "Josefin Sans" ,sans-serif;
 }
