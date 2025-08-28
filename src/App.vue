@@ -1,15 +1,15 @@
-<script setup></script>
+<script setup>
+import AppNav from "./components/NavComponent.vue";
+</script>
 <template>
-  <p>hello</p>
+<AppNav/>
 </template>
 
 <style lang="scss">
 @use './assets/sass/_reset.scss' as *;
 @use './assets/sass/fonts.scss' as *;
 @use './assets/sass/colors.scss' as *;
-
-p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: $primary-font-size;
+body{
+  background-color: black;
 }
 </style>
