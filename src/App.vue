@@ -1,14 +1,15 @@
-<script setup>
-
-</script>
-
+<script setup></script>
 <template>
- <p>hello</p>
+  <p>hello</p>
 </template>
 
 <style lang="scss">
-@import "./assets/sass/_reset.scss";
-p{
-  font-family: "Josefin Sans" ,sans-serif;
+@use './assets/sass/_reset.scss' as *;
+@use './assets/sass/fonts.scss' as *;
+@use './assets/sass/colors.scss' as *;
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: $primary-font-size;
 }
 </style>
