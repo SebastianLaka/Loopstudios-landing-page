@@ -6,6 +6,7 @@ const navLinks = [
   { id: 4, name: 'Products' },
   { id: 5, name: 'Support' },
 ]
+
 </script>
 <template>
   <ul class="nav-names">
@@ -30,6 +31,7 @@ const navLinks = [
     font-size: 1.6rem;
     font-family: 'Alata', sans-serif;
     font-weight: 300;
+    cursor: pointer;
   }
 }
 @media (min-width: 320px) and (max-width: 991px) {
@@ -39,7 +41,6 @@ const navLinks = [
     background-color: $main-black;
     min-height: 100dvh;
     z-index: -10;
-    transform: translateX(2000px);
     padding: 0 2em;
     gap: 1.25em 0;
   }
