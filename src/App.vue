@@ -2,7 +2,9 @@
 import NavComponent from './components/NavComponent.vue'
 </script>
 <template>
+  <main class="main-container wrapper">
     <NavComponent />
+  </main>
 </template>
 <style lang="scss">
 @use './assets/sass/_reset.scss' as *;
@@ -15,5 +17,4 @@ body {
   color: $main-white;
   position: relative;
 }
-
 </style>

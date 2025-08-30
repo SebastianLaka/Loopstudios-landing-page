@@ -9,6 +9,7 @@
   background-color: transparent;
   border: none;
   padding: 0.5em;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .close-icon {
