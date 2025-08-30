@@ -1,4 +1,18 @@
 <script setup></script>
 <template>
-    <img src="./icons/icon-close.svg" alt="Close menu">
+  <button class="close-icon">
+    <img src="./icons/icon-close.svg" alt="Close menu" />
+  </button>
 </template>
+<style scoped lang="scss">
+.close-icon {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em;
+}
+@media (min-width: 992px) {
+  .close-icon {
+    display: none;
+  }
+}
+</style>
