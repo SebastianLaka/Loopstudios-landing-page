@@ -12,7 +12,7 @@ const toggleState = () => {
   <nav class="main-navigation wrapper">
     <NavLogo />
     <div class="nav-container">
-      <NavToggleIcons @click="toggleState" />
+      <NavToggleIcons @toggle-nav="toggleState" :isToggle="!isCollapsed" />
       <NavBar />
     </div>
   </nav>
