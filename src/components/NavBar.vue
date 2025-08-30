@@ -39,7 +39,7 @@ const navLinks = [
     background-color: $main-black;
     min-height: 100dvh;
     z-index: -10;
-    // transform: translateX(2000px);
+    transform: translateX(2000px);
     padding: 0 2em;
     gap: 1.25em 0;
   }

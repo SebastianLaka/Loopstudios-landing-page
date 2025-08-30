@@ -1,15 +1,18 @@
 <script setup>
+import { ref } from 'vue'
 import NavLogo from './NavLogo.vue'
-import NavIconHamburger from './NavIconHamburger.vue'
-import NavIconClose from './NavIconClose.vue'
+import NavToggleIcons from './NavToggleIcons.vue'
 import NavBar from './NavBar.vue'
+const isCollapsed = ref(false)
+const toggleState = () => {
+  isCollapsed.value = !isCollapsed.value
+}
 </script>
 <template>
   <nav class="main-navigation wrapper">
     <NavLogo />
     <div class="nav-container">
-      <NavIconHamburger />
-      <NavIconClose />
+      <NavToggleIcons @click="toggleState" />
       <NavBar />
     </div>
   </nav>
