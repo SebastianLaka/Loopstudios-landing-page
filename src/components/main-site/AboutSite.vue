@@ -25,10 +25,11 @@
 </template>
 <style scoped lang="scss">
 @use '@/assets/sass/colors' as *;
+@use '@/assets/sass/fonts' as *;
 .about-site-container {
   display: flex;
   flex-direction: column;
-  padding: 2em 1em;
+  padding: 8em 1em;
   gap: 2.25em 0;
   .content-section {
     display: flex;
@@ -36,7 +37,7 @@
     align-items: center;
     flex-direction: column;
     &__header {
-      padding-bottom: .7em;
+      padding-bottom: 0.7em;
       font-size: 2.5rem;
     }
     &__header,
@@ -57,10 +58,41 @@
       display: none;
     }
   }
-  .content-section{
+  .content-section {
     &__header,
-    &__description{
-        text-align: center;
+    &__description {
+      text-align: center;
+      line-height: 125%;
+    }
+    &__description {
+      font-weight: $secondary-font-weight;
+      padding: 0 2em;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .about-site-container {
+    
+    padding: 8em 0;
+    flex-direction: row;
+    align-items: end;
+    .background-section {
+      &__mobile-image {
+        display: none;
+      }
+      &__desktop-image {
+        object-fit: cover;
+        display: block;
+        width: 125%;
+        height: 100%;
+        position: relative;
+        z-index: -1;
+      }
+    }
+    .content-section{
+      width: 45%;
+      background-color: $main-white;
+      padding: 3em 2.4em 0 2.4em;
     }
   }
 }
