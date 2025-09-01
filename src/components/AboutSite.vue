@@ -36,8 +36,8 @@
     align-items: center;
     flex-direction: column;
     &__header {
-      padding-bottom: 1em;
-      font-size: 2rem;
+      padding-bottom: .7em;
+      font-size: 2.5rem;
     }
     &__header,
     &__description {

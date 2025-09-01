@@ -19,8 +19,9 @@ const navLinks = [
   </ul>
 </template>
 <style scoped lang="scss">
-@use '../assets/sass/colors' as *;
-@use '../assets/sass/fonts' as *;
+
+@use '@/assets/sass/fonts' as *;
+@use '@/assets/sass/colors' as *;
 .nav-names {
   display: flex;
   flex-direction: column;

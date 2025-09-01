@@ -1,5 +1,5 @@
 <script setup>
-import NavComponent from './components/NavComponent.vue';
+import NavComponent from './components/nav/NavComponent.vue';
 import HeaderSite from './components/HeaderSite.vue';
 import AboutSite from './components/AboutSite.vue';
 </script>
