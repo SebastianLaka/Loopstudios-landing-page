@@ -21,7 +21,7 @@ onMounted(() => {
   </section>
 </template>
 <style scoped lang="scss">
-@use '../assets/sass/colors' as *;
+@use '@/assets/sass/colors' as *;
 .header-container {
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ onMounted(() => {
 @media (min-width: 320px) {
   .header-container {
     height: 100svh;
-    background-image: url(../assets/images/mobile-images/image-hero.jpg);
+    background-image: url(@/assets/images/mobile-images/image-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     .header-content {
@@ -56,7 +56,7 @@ onMounted(() => {
 }
 @media (min-width: 992px) {
   .header-container {
-    background-image: url(../assets/images/desktop-images/image-hero.jpg);
+    background-image: url(@/assets/images/desktop-images/image-hero.jpg);
     justify-content: start;
     height: 100dvh;
     .header-content {

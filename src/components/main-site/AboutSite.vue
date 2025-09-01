@@ -3,12 +3,12 @@
   <section class="about-site-container wrapper">
     <div class="background-section">
       <img
-        src="../assets/images/mobile-images/image-interactive.jpg"
+        src="@/assets/images/mobile-images/image-interactive.jpg"
         alt=""
         class="background-section__mobile-image"
       />
       <img
-        src="../assets/images/desktop-images/image-interactive.jpg"
+        src="@/assets/images/desktop-images/image-interactive.jpg"
         alt=""
         class="background-section__desktop-image"
       />
@@ -24,7 +24,7 @@
   </section>
 </template>
 <style scoped lang="scss">
-@use '../assets/sass/colors' as *;
+@use '@/assets/sass/colors' as *;
 .about-site-container {
   display: flex;
   flex-direction: column;
