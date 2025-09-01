@@ -72,7 +72,6 @@
 }
 @media (min-width: 992px) {
   .about-site-container {
-    
     padding: 8em 0;
     flex-direction: row;
     align-items: end;
@@ -89,10 +88,19 @@
         z-index: -1;
       }
     }
-    .content-section{
+    .content-section {
       width: 45%;
       background-color: $main-white;
-      padding: 3em 2.4em 0 2.4em;
+      padding: 3em 4em 0 4em;
+      &__header{
+        margin-bottom: 1em;
+      }
+      &__header,
+      &__description{
+        text-align: start;
+        padding: 0;
+        line-height: 150%;
+      }
     }
   }
 }
