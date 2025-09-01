@@ -37,7 +37,7 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 0;
+    padding: 2em;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,6 +53,11 @@ onUnmounted(() => {
     .slide-from-right-leave-to {
       transform: translateX(100%);
     }
+  }
+}
+@media (min-width: 992px){
+  .main-navigation{
+    padding: 2em 0;
   }
 }
 </style>

@@ -1,11 +1,13 @@
 <script setup>
 import NavComponent from './components/NavComponent.vue';
 import HeaderSite from './components/HeaderSite.vue';
+import AboutSite from './components/AboutSite.vue';
 </script>
 <template>
   <main class="main-container">
     <NavComponent />
     <HeaderSite/>
+    <AboutSite />
   </main>
 </template>
 <style lang="scss">
