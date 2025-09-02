@@ -1,5 +1,6 @@
 <script setup>
 import HeaderCreations from './HeaderCreations.vue'
+import GridMain from './grid-creations/GridMain.vue'
 import { ref, onMounted } from 'vue'
 const header = ref('')
 const changeHeaderName = (title) => {
@@ -11,8 +12,11 @@ onMounted(() => {
 })
 </script>
 <template>
-  <section class="wrapper">
+  <section class="creations-section wrapper">
     <HeaderCreations>{{ header }}</HeaderCreations>
+    <GridMain/>
   </section>
 </template>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+</style>
