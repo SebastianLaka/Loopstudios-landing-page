@@ -14,9 +14,14 @@ onMounted(() => {
 <template>
   <section class="creations-section wrapper">
     <HeaderCreations>{{ header }}</HeaderCreations>
-    <GridMain/>
+    <GridMain />
   </section>
 </template>
 <style scoped lang="scss">
-
+.creations-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2em 0;
+  
+}
 </style>

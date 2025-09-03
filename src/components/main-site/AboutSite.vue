@@ -48,7 +48,7 @@
 }
 @media (min-width: 320px) {
   .about-site-container{
-    padding: 5em 1em;
+    padding: 5em 0;
   .background-section {
     &__mobile-image {
       object-fit: cover;

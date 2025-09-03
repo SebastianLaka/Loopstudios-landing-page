@@ -16,8 +16,51 @@ const gridData = ref([
         id: 1,
         gridTitle: 'deep earth',
         gridDescription: 'Deep earth picture',
-        gridImage: ImageDeepEarth
+        gridImage: ImageDeepEarth,
     },
+    {
+        id: 2,
+        gridTitle: 'night arcade',
+        gridDescription: 'Night arcade picture',
+        gridImage: ImageNightArcade
+
+    },
+    {
+        id: 3,
+        gridTitle: 'soccer team vr',
+        gridDescription: 'Soccer team vr picture',
+        gridImage: ImageSoccerTeam
+    },
+    {
+        id: 4,
+        gridTitle: 'the grid',
+        gridDescription: 'The grid picture',
+        gridImage: ImageGrid
+    },
+    {
+        id: 5,
+        gridTitle: 'from up above vr',
+        gridDescription: 'from up above vr picture',
+        gridImage: ImageFromAbove
+    },
+    {
+        id: 6,
+        gridTitle: 'pocket borealis',
+        gridDescription: 'pocket borealis picture',
+        gridImage: ImagePocketBorealis
+    },
+    {
+        id: 7,
+        gridTitle: 'the curiosity',
+        gridDescription: 'the curiosity picture',
+        gridImage: ImageCuriosity
+    },
+    {
+        id: 8,
+        gridTitle: 'Make it fisheye',
+        gridDescription: 'Fisheye picture',
+        gridImage: ImageFisheye
+    }
 ])
 
 </script>
@@ -26,4 +69,11 @@ const gridData = ref([
         <GridCreations v-for="gridItem in gridData" :key="gridItem.id" :src="gridItem.gridImage" :title="gridItem.gridTitle"/>
     </div>
 </template>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.grid-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em 0;
+}
+
+</style>
