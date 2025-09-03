@@ -9,13 +9,13 @@
   .creations-header {
     color: $main-black;
     font-size: 2rem;
-    text-align: center;
+    align-self: center;
   }
 }
 @media (min-width: 992px) {
   .creations-header {
     font-size: 2.5rem;
-    text-align: start;
+    align-self: start;
   }
 }
 </style>
