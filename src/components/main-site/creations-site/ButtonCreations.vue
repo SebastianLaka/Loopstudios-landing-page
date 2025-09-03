@@ -10,7 +10,7 @@
 @use '@/assets/sass/colors' as *;
 @media (min-width: 320px){
     .grid-content-button{
-        text-align: center;
+        align-self: center;
         padding: 1em 3.5em;
         letter-spacing: .25em;
         text-transform: uppercase;

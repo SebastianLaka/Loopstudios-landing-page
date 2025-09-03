@@ -70,10 +70,11 @@ const gridData = ref([
     </div>
 </template>
 <style scoped lang="scss">
-.grid-main{
-    display: flex;
-    flex-direction: column;
-    gap: 2em 0;
+@media (min-width: 320px){
+    .grid-main{
+        display: flex;
+        flex-direction: column;
+        gap: 2em 0;
+    }
 }
-
 </style>

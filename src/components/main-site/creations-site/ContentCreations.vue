@@ -20,10 +20,11 @@ onMounted(() => {
   </section>
 </template>
 <style scoped lang="scss">
-.creations-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em 0;
+@media (min-width: 320px){
+  .creations-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2em 0;
+  }
 }
 </style>
