@@ -1,5 +1,5 @@
 <script setup>
-import { reactive } from 'vue'
+import {reactive} from 'vue'
 const props = defineProps({
   title: String,
   src: {
@@ -18,7 +18,11 @@ const styleImage = reactive({
 <template>
   <div class="grid-item wrapper">
     <h2 class="grid-item__name">{{ props.title }}</h2>
-    <img :style="styleImage" :src="props.src" :alt="props.alt" />
+    <img
+      :style="styleImage"
+      :src="props.src"
+      :alt="props.alt"
+    />
   </div>
 </template>
 <style scoped lang="scss">
@@ -35,6 +39,14 @@ const styleImage = reactive({
       line-height: 125%;
       text-transform: uppercase;
       padding: 1em;
+    }
+  }
+}
+@media (min-width: 992px){
+  .grid-item{
+    &__name{
+      padding: 2em;
+      inline-size: 9.5em;
     }
   }
 }

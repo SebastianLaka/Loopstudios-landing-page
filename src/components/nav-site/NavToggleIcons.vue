@@ -15,7 +15,7 @@ const emits = defineEmits(['toggle-nav'])
 .site-icon {
   background-color: transparent;
   border: none;
-  padding: 0.5em;
+  
   cursor: pointer;
 }
 @media (min-width: 992px) {

@@ -26,7 +26,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.25em;
+  
 }
 @media (min-width: 320px) {
   .header-container {
@@ -34,11 +34,12 @@ onMounted(() => {
     background-image: url(@/assets/images/mobile-images/image-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0 1em;
     .header-content {
       border: 0.2em solid $main-white;
       padding: 1.75em;
       &__title {
-        padding: 0 1.2em 0 0;
+        padding: 1.2em 0 0 0;
         font-size: 2rem;
         line-height: 125%;
       }

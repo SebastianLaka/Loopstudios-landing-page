@@ -11,6 +11,7 @@ onMounted(() => {
   const headerTitle = 'our creations'
   changeHeaderName(headerTitle)
 })
+
 </script>
 <template>
   <section class="creations-section wrapper">
