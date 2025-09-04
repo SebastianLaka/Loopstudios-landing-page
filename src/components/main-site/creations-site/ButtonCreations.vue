@@ -18,6 +18,11 @@
         font-family: inherit;
         font-weight: bold;
         border: .2em solid $main-black;
+        transition: background-color .3s, color .3s;
+    }
+    .grid-content-button:hover{
+        background-color: $main-black;
+        color: $main-white;
     }
 }
 </style>
