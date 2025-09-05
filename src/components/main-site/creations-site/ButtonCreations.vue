@@ -25,4 +25,7 @@
         color: $main-white;
     }
 }
+@media (min-width: 992px){
+    
+}
 </style>

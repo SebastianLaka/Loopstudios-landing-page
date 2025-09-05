@@ -28,4 +28,20 @@ onMounted(() => {
     gap: 2em 0;
   }
 }
+@media (min-width: 992px){
+  .creations-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    .grid-content-button{
+      grid-column: 2/3;
+      grid-row: 1/2;
+       justify-self: end
+    }
+    .grid-main{
+      grid-column: 1/3;
+    }
+  }
+
+}
 </style>
