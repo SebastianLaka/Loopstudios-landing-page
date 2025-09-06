@@ -1,11 +1,14 @@
 <script setup>
-import footerLogo from './footerLogo.vue'
+import footerLogo from './footerLogo.vue';
+import footerRights from './footerRights.vue';
 </script>
 <template>
   <footer class="footer-container">
     <div class="footer-content wrapper">
       <footerLogo />
-    
+      <footerRights>
+        © 2021 Loopstudios. All rights reserved.
+      </footerRights>
     </div>
   </footer>
 </template>
