@@ -2,7 +2,7 @@
 import { ref, Transition, onMounted, onUnmounted  } from 'vue'
 import NavLogo from './NavLogo.vue'
 import NavToggleIcons from './NavToggleIcons.vue'
-import NavBar from './NavBar.vue'
+import NavBar from './nav-bars/NavBar.vue'
 const isMobile = ref(false)
 const isDesktop = ref(null)
 
