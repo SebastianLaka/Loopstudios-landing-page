@@ -15,3 +15,12 @@ import FooterComponent from '../components/footer-site/FooterComponent.vue';
     <FooterComponent/>
   </main>
 </template>
+<style scoped lang="scss">
+@media(min-width: 320px){
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4em 0;
+  }
+}
+</style>
