@@ -1,5 +1,5 @@
 <script setup>
-import {reactive} from 'vue'
+import { reactive } from 'vue'
 const props = defineProps({
   title: String,
   src: {
@@ -18,17 +18,16 @@ const styleImage = reactive({
 <template>
   <div class="grid-item wrapper">
     <h2 class="grid-item__name">{{ props.title }}</h2>
-    <img
-      :style="styleImage"
-      :src="props.src"
-      :alt="props.alt"
-    />
+      <img :style="styleImage" :src="props.src" :alt="props.alt" />
   </div>
 </template>
 <style scoped lang="scss">
+@use '@/assets/sass/colors' as *;
+
 @media (min-width: 320px) {
   .grid-item {
     position: relative;
+    cursor: pointer;
     &__name {
       position: absolute;
       bottom: 0;
@@ -40,11 +39,18 @@ const styleImage = reactive({
       text-transform: uppercase;
       padding: 1em;
     }
+    img{
+      transition: background .3s ease-in, color .3s ease-in
+    }
+    img:hover{
+      background: rgba($main-white, 0.3);
+      color: $main-black;
+    }
   }
 }
-@media (min-width: 992px){
-  .grid-item{
-    &__name{
+@media (min-width: 992px) {
+  .grid-item {
+    &__name {
       padding: 2em;
       inline-size: 9.5em;
     }

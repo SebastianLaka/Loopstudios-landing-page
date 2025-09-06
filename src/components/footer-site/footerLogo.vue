@@ -1,3 +1,5 @@
-<script setup></script>
-<template></template>
-<style scoped langs="scss"></style>
+<script setup>
+</script>
+<template>
+    <img src="@/assets/images/logo.svg" alt="loopstudios logo" class="site-logo">
+</template>
