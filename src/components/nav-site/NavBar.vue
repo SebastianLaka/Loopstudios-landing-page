@@ -15,7 +15,6 @@ const navLinks = [
       v-for="navLink in navLinks"
       :key="navLink.id"
       v-text=" navLink.name"
-      class="nav-names__link"
     />
   </ul>
 </template>
@@ -27,14 +26,7 @@ const navLinks = [
   display: flex;
   flex-direction: column;
   justify-content: center;
-  &__link {
-    list-style: none;
-    color: $main-white;
-    font-size: 1.6rem;
-    font-family: 'Alata', sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-  }
+  
 }
 @media (min-width: 320px) and (max-width: 991px) {
   .nav-names {
@@ -51,9 +43,7 @@ const navLinks = [
   .nav-names {
     flex-direction: row;
     gap: 0em 2em;
-    &__link {
-      font-size: $primary-font-size;
-    }
+   
   }
 }
 </style>

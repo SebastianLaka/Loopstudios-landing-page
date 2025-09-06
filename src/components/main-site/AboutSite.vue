@@ -29,7 +29,6 @@
 .about-site-container {
   display: flex;
   flex-direction: column;
-  
   gap: 2.25em 0;
   .content-section {
     display: flex;
@@ -48,7 +47,6 @@
 }
 @media (min-width: 320px) {
   .about-site-container{
-    padding: 5em 0;
   .background-section {
     &__mobile-image {
       object-fit: cover;
@@ -76,7 +74,6 @@
 
 @media (min-width: 992px) {
   .about-site-container {
-    padding: 8em 0;
     flex-direction: row;
     align-items: end;
     .background-section {

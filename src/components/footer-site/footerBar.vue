@@ -5,11 +5,19 @@ const props = defineProps({
 </script>
 <template>
   <ul>
-    <li class="footer-bar">{{ props.title }}</li>
+    <a href="#" class="footer-link"
+      ><li class="footer-bar">{{ props.title }}</li></a
+    >
   </ul>
 </template>
 <style scoped lang="scss">
-.footer-bar {
-  list-style-type: none;
+@use '@/assets/sass/colors' as *;
+@use '@/assets/sass/fonts' as *;
+.footer-link {
+  text-decoration: none;
+  color: $main-white;
+  .footer-bar {
+    list-style-type: none;
+  }
 }
 </style>
