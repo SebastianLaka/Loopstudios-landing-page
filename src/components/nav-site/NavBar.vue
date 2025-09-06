@@ -1,4 +1,5 @@
 <script setup>
+import NavBarLinks from './NavBarLinks.vue';
 const navLinks = [
   { id: 1, name: 'About' },
   { id: 2, name: 'Carrers' },
@@ -10,12 +11,12 @@ const navLinks = [
 </script>
 <template>
   <ul class="nav-names">
-    <li
+    <NavBarLinks
       v-for="navLink in navLinks"
       :key="navLink.id"
-      v-text="navLink.name"
+      v-text=" navLink.name"
       class="nav-names__link"
-    ></li>
+    />
   </ul>
 </template>
 <style scoped lang="scss">

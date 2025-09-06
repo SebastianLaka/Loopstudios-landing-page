@@ -4,12 +4,7 @@ const props = defineProps({
 })
 </script>
 <template>
-  <ul>
-    <li class="footer-bar">{{ props.title }}</li>
-  </ul>
+  <li class="nav-names__link">{{ props.title }}</li>
 </template>
 <style scoped lang="scss">
-.footer-bar {
-  list-style-type: none;
-}
 </style>
