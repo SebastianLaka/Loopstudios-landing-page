@@ -1,18 +1,8 @@
 <script setup>
-import NavComponent from './components/nav-site/NavComponent.vue';
-import HeaderSite from './components/main-site/HeaderSite.vue';
-import AboutSite from './components/main-site/AboutSite.vue';
-import ContentCreations from './components/main-site/creations-site/ContentCreations.vue';
-import footerComponent from './components/footer-site/footerComponent.vue';
+import MainComponent from './components/MainComponent.vue';
 </script>
 <template>
-  <main class="main-container">
-    <NavComponent />
-    <HeaderSite/>
-    <AboutSite />
-    <ContentCreations/>
-    <footerComponent/>
-  </main>
+ <MainComponent />
 </template>
 <style lang="scss">
 @use './assets/sass/_reset.scss' as *;
