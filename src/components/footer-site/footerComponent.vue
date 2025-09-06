@@ -79,9 +79,39 @@ const footerSmIcons = [
         list-style: none;
         gap: 1.5em 0;
       }
-      .footer-sm-icons{
+      .footer-sm-icons {
         display: flex;
         gap: 0 1em;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .footer-container {
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      &__site-logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      &__footer-rights{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: end;
+        color: $main-grey;
+      }
+      .footer-bars{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        flex-direction: row;
+        gap: 1.5em;
+      }
+      .footer-sm-icons{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: end;
       }
     }
   }

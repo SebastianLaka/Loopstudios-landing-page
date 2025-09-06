@@ -51,8 +51,7 @@ const styleImage = reactive({
 @media (min-width: 992px) {
   .grid-item {
     &__name {
-      padding: 2em;
-      inline-size: 9.5em;
+      padding: 2em 0 2em 2em
     }
   }
 }
