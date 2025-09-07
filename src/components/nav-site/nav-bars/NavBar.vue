@@ -1,5 +1,6 @@
 <script setup>
 import NavBarLinks from './NavBarLinks.vue';
+
 const navLinks = [
   { id: 1, name: 'About' },
   { id: 2, name: 'Carrers' },
@@ -19,7 +20,7 @@ const navLinks = [
   </ul>
 </template>
 <style scoped lang="scss">
-
+@use '@/assets/sass/mixins' as *;
 @use '@/assets/sass/fonts' as *;
 @use '@/assets/sass/colors' as *;
 .nav-names {
@@ -37,6 +38,7 @@ const navLinks = [
     z-index: -10;
     padding: 0 2em;
     gap: 1.25em 0;
+    
   }
 }
 @media (min-width: 992px) {

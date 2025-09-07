@@ -107,11 +107,13 @@ onUnmounted(() => {
   </div>
 </template>
 <style scoped lang="scss">
+@use '@/assets/sass/colors' as *;
 @media (min-width: 320px) {
   .grid-main {
     display: flex;
     flex-direction: column;
     gap: 2em 0;
+    transition: .3s color;
   }
 }
 @media (min-width: 992px) {
