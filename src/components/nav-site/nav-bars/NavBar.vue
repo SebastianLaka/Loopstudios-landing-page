@@ -1,6 +1,5 @@
 <script setup>
-import NavBarLinks from './NavBarLinks.vue';
-
+import NavBarLinks from './NavBarLinks.vue'
 const navLinks = [
   { id: 1, name: 'About' },
   { id: 2, name: 'Carrers' },
@@ -8,15 +7,10 @@ const navLinks = [
   { id: 4, name: 'Products' },
   { id: 5, name: 'Support' },
 ]
-
 </script>
 <template>
   <ul class="nav-names">
-    <NavBarLinks
-      v-for="navLink in navLinks"
-      :key="navLink.id"
-      v-text=" navLink.name"
-    />
+    <NavBarLinks v-for="navLink in navLinks" :key="navLink.id" v-text="navLink.name" />
   </ul>
 </template>
 <style scoped lang="scss">
@@ -27,8 +21,8 @@ const navLinks = [
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
+
 @media (min-width: 320px) and (max-width: 991px) {
   .nav-names {
     position: absolute;
@@ -38,14 +32,12 @@ const navLinks = [
     z-index: -10;
     padding: 0 2em;
     gap: 1.25em 0;
-    
   }
 }
 @media (min-width: 992px) {
   .nav-names {
     flex-direction: row;
     gap: 0em 2em;
-   
   }
 }
 </style>
