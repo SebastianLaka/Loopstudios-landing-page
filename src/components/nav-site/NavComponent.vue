@@ -38,11 +38,13 @@ onUnmounted(() => {
 </template>
 <style scoped lang="scss">
 @use '@/assets/sass/colors' as *;
+@use '@/assets/sass/mixins' as *;
 @media (min-width: 320px) {
   .main-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    @include  flex-center-between;
     padding: 1.1em;
     position: fixed;
     top: 0;
@@ -55,8 +57,9 @@ onUnmounted(() => {
     animation: showNavColor .3s;
   }
   .nav-container {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    @include flex-center-between;
     .slide-from-right-enter-active,
     .slide-from-right-leave-active {
       transition: transform 0.3s ease-in-out;

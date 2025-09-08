@@ -16,10 +16,12 @@ import FooterComponent from '../components/footer-site/FooterComponent.vue';
   </main>
 </template>
 <style scoped lang="scss">
+@use '@/assets/sass/mixins' as *;
 @media(min-width: 320px){
   .main-container{
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    @include flex-column;
     gap: 4em 0;
   }
 }

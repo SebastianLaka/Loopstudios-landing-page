@@ -19,3 +19,19 @@
     width: 50%;
   }
 }
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-center-between {
+  @include flex-space-between;
+  align-items: center;
+}
+@mixin flex-between-center {
+  @include flex-space-between;
+  align-items: center;
+}
