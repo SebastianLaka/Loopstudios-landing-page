@@ -26,7 +26,7 @@ onUnmounted(() => {
 })
 </script>
 <template>
-  <nav class="main-navigation" :class="{ 'change-nav-color': scrollPosition > 100 }">
+  <nav class="main-navigation" :class="{ 'change-nav-color': scrollPosition > 50 }">
     <div class="nav-container wrapper">
       <NavLogo />
       <NavToggleIcons @toggle-nav="toggleState" :isToggle="isMobile" />
@@ -52,7 +52,7 @@ onUnmounted(() => {
   }
   .change-nav-color {
     background-color: rgba($main-black, 0.8);
-    transition: background-color .3s ease-in-out;
+    animation: showNavColor .3s;
   }
   .nav-container {
     display: flex;
@@ -64,6 +64,13 @@ onUnmounted(() => {
     .slide-from-right-enter-from,
     .slide-from-right-leave-to {
       transform: translateX(100%);
+    }
+  }
+  @keyframes showNavColor{
+    from{
+      background-color: transparent;
+    }to{
+      background-color: rgba($main-black, 0.8);
     }
   }
 }
