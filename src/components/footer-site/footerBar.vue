@@ -15,15 +15,10 @@ const props = defineProps({
 @use '@/assets/sass/fonts' as *;
 @use '@/assets/sass/mixins' as *;
 .footer-link {
-  text-decoration: none;
   color: $main-white;
   position: relative;
   font-size: $primary-font-size;
   font-weight: $secondary-font-weight;
-  
- @include desktop-highlight;
-  .footer-bar {
-    list-style-type: none;
-  }
+  @include desktop-highlight;
 }
 </style>

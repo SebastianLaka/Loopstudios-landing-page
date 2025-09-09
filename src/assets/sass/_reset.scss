@@ -5,3 +5,17 @@
   margin: 0;
   padding: 0;
 }
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+p {
+  line-height: 125%;
+}

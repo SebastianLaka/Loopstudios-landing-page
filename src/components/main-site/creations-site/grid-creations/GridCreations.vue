@@ -27,7 +27,6 @@ const styleImage = reactive({
   .grid-item {
     position: relative;
     transition: color 0.3s ease;
-    cursor: pointer;
     &__name {
       position: absolute;
       bottom: 0;
@@ -35,12 +34,10 @@ const styleImage = reactive({
       font-size: 1.6rem;
       inline-size: 7.5em;
       overflow-wrap: break-word;
-      line-height: 125%;
       text-transform: uppercase;
       padding: 1em;
       transition: color 0.3s ease-in;
     }
-    
     &::before {
       content: '';
       position: absolute;

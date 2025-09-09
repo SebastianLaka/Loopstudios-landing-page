@@ -21,10 +21,10 @@ onMounted(() => {
   </section>
 </template>
 <style scoped lang="scss">
+@use '@/assets/sass/mixins' as *;
 @media (min-width: 320px){
   .creations-section{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 2em 0;
   }
 }
@@ -32,7 +32,6 @@ onMounted(() => {
   .creations-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
     .grid-content-button{
       grid-column: 2/3;
       grid-row: 1/2;

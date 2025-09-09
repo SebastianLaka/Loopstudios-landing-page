@@ -75,7 +75,6 @@ const footerSmIcons = [
       .footer-bars {
         @include flex-column;
         align-items: center;
-        list-style: none;
         gap: 1.5em 0;
       }
       .footer-sm-icons {

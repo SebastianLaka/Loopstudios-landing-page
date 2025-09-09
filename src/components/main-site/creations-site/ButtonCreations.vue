@@ -14,9 +14,8 @@
         padding: 1em 3.5em;
         letter-spacing: .25em;
         text-transform: uppercase;
-        cursor: pointer;
         font-family: inherit;
-        font-weight: bold;
+        font-weight: $secondary-font-weight;
         border: .2em solid $main-black;
         transition: background-color .3s, color .3s;
     }
@@ -24,8 +23,5 @@
         background-color: $main-black;
         color: $main-white;
     }
-}
-@media (min-width: 992px){
-    
 }
 </style>
