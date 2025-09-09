@@ -41,9 +41,6 @@ onUnmounted(() => {
 @use '@/assets/sass/mixins' as *;
 @media (min-width: 320px) {
   .main-navigation {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
     @include  flex-center-between;
     padding: 1.1em;
     position: fixed;
@@ -57,8 +54,6 @@ onUnmounted(() => {
     animation: showNavColor .3s;
   }
   .nav-container {
-    // display: flex;
-    // justify-content: space-between;
     @include flex-center-between;
     .slide-from-right-enter-active,
     .slide-from-right-leave-active {
