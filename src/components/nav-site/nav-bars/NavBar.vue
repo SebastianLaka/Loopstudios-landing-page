@@ -18,8 +18,7 @@ const navLinks = [
 @use '@/assets/sass/fonts' as *;
 @use '@/assets/sass/colors' as *;
 .nav-names {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: center;
 }
 

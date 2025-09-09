@@ -35,7 +35,7 @@ onMounted(() => {
     .grid-content-button{
       grid-column: 2/3;
       grid-row: 1/2;
-       justify-self: end
+      justify-self: end
     }
     .grid-main{
       grid-column: 1/3;
