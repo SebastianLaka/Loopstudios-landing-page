@@ -19,6 +19,15 @@
     width: 50%;
   }
 }
+@mixin flex-center-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-column-center{
+  @include flex-center-items;
+  flex-direction: column;
+}
 @mixin flex-column {
   display: flex;
   flex-direction: column;
@@ -31,7 +40,4 @@
   @include flex-space-between;
   align-items: center;
 }
-@mixin flex-between-center {
-  @include flex-space-between;
-  align-items: center;
-}
+

@@ -26,15 +26,12 @@
 <style scoped lang="scss">
 @use '@/assets/sass/colors' as *;
 @use '@/assets/sass/fonts' as *;
+@use '@/assets/sass/mixins' as *;
 .about-site-container {
-  display: flex;
-  flex-direction: column;
+  @include  flex-column;
   gap: 2.25em 0;
   .content-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column-center;
     &__header {
       padding-bottom: 0.7em;
       font-size: 2.5rem;

@@ -22,11 +22,9 @@ onMounted(() => {
 </template>
 <style scoped lang="scss">
 @use '@/assets/sass/colors' as *;
-.header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+@use '@/assets/sass/mixins' as *;
+.header-container { 
+  @include flex-center-items;
 }
 @media (min-width: 320px) {
   .header-container {
