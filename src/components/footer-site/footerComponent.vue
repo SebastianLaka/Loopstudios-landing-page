@@ -63,18 +63,17 @@ const footerSmIcons = [
 </template>
 <style scoped lang="scss">
 @use '@/assets/sass/colors' as *;
+@use "@/assets/sass/mixins" as *;
 @media (min-width: 320px) {
   .footer-container {
     background-color: $main-black;
     padding: 3em 0;
     .footer-content {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       gap: 2em 0;
       .footer-bars {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         list-style: none;
         gap: 1.5em 0;
