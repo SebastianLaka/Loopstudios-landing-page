@@ -1,16 +1,35 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
+import NavComponent from '../nav-site/NavComponent.vue';
 const headerTitle = ref('')
+const headerRef = ref('')
+
+const isScrolled = ref(false)
+const options = {
+  rootMargin: "-90% 0% 0% 0%",
+}
 const changeTitleName = (title) => {
   return (headerTitle.value = title.toUpperCase())
 }
 onMounted(() => {
   const titleFromHeader = 'immersive experiences that deliver'
   changeTitleName(titleFromHeader)
+    const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        isScrolled.value = !entry.isIntersecting
+      })
+    },
+    options
+  )
+  if (headerRef.value) {
+    observer.observe(headerRef.value)
+  }
 })
 </script>
 <template>
-  <section class="header-container">
+  <NavComponent :is-scrolled="isScrolled" />
+  <section ref="headerRef" class="header-container">
     <div class="header-wrapper wrapper">
       <div class="header-content">
         <h1 class="header-content__title">
@@ -26,6 +45,7 @@ onMounted(() => {
 .header-container { 
   @include flex-center-items;
 }
+
 @media (min-width: 320px) {
   .header-container {
     height: 100svh;
