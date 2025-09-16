@@ -2,14 +2,14 @@
 import HeaderSite from '../components/main-site/HeaderSite.vue';
 import AboutSite from '../components/main-site/AboutSite.vue';
 import ContentCreations from '../components/main-site/creations-site/ContentCreations.vue';
-import FooterComponent from '../components/footer-site/FooterComponent.vue';
+import footerComponent from '../components/footer-site/FooterComponent.vue';
 </script>
 <template>
   <main class="main-container">
     <HeaderSite />
     <AboutSite />
     <ContentCreations />
-    <FooterComponent />
+    <footerComponent />
   </main>
 </template>
 <style scoped lang="scss">
