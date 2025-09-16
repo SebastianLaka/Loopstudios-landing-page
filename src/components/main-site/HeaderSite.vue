@@ -1,12 +1,12 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import NavComponent from '../nav-site/NavComponent.vue';
+import { ref, onMounted } from 'vue'
+import NavComponent from '../nav-site/NavComponent.vue'
 const headerTitle = ref('')
 const headerRef = ref('')
 
 const isScrolled = ref(false)
 const options = {
-  rootMargin: "-90% 0% 0% 0%",
+  rootMargin: '-90% 0% 0% 0%',
 }
 const changeTitleName = (title) => {
   return (headerTitle.value = title.toUpperCase())
@@ -14,14 +14,11 @@ const changeTitleName = (title) => {
 onMounted(() => {
   const titleFromHeader = 'immersive experiences that deliver'
   changeTitleName(titleFromHeader)
-    const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        isScrolled.value = !entry.isIntersecting
-      })
-    },
-    options
-  )
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      isScrolled.value = !entry.isIntersecting
+    })
+  }, options)
   if (headerRef.value) {
     observer.observe(headerRef.value)
   }
@@ -42,10 +39,9 @@ onMounted(() => {
 <style scoped lang="scss">
 @use '@/assets/sass/colors' as *;
 @use '@/assets/sass/mixins' as *;
-.header-container { 
+.header-container {
   @include flex-center-items;
 }
-
 @media (min-width: 320px) {
   .header-container {
     height: 100svh;
@@ -96,8 +92,8 @@ onMounted(() => {
     }
   }
 }
-@media (min-width: 1440px){
-    .header-container {
+@media (min-width: 1440px) {
+  .header-container {
     .header-content {
       &__title {
         font-size: 5rem;

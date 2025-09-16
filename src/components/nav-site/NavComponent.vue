@@ -5,7 +5,7 @@ import NavToggleIcons from './NavToggleIcons.vue'
 import NavBar from './nav-bars/NavBar.vue'
 
 const isMobile = ref(false)
-const isDesktop = ref(null)
+const isDesktop = ref(true)
 const props = defineProps(
   {isScrolled: Boolean}
 )
@@ -32,7 +32,7 @@ onUnmounted(() => {
       <NavLogo />
       <NavToggleIcons @toggle-nav="toggleState" :isToggle="isMobile" />
       <Transition name="slide-from-right">
-        <NavBar v-if="isDesktop || isMobile" />
+        <NavBar v-if="isDesktop || isMobile" :isMobile="isMobile"/>
       </Transition>
     </div>
   </nav>

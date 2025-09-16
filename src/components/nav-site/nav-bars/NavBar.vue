@@ -1,5 +1,8 @@
 <script setup>
 import NavBarLinks from './NavBarLinks.vue'
+const props = defineProps({
+  isMobile: Boolean,
+});
 const navLinks = [
   { id: 1, name: 'About' },
   { id: 2, name: 'Carrers' },
