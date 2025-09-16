@@ -1,8 +1,8 @@
 <script setup>
-import FooterLogo from './FooterLogo.vue'
-import FooterRights from './FooterRights.vue'
-import FooterBar from './FooterBar.vue'
-import FooterSocialMedia from './FooterSocialMedia.vue'
+import FooterLogo from './fl.vue'
+import FooterRights from './fr.vue'
+import FooterBar from './fb.vue'
+import FooterSocialMedia from './fsm.vue'
 
 import IconFacebook from '../icons/icon-facebook.svg'
 import IconTwitter from '../icons/icon-twitter.svg'
