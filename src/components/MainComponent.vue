@@ -2,7 +2,7 @@
 import HeaderSite from '../components/main-site/HeaderSite.vue';
 import AboutSite from '../components/main-site/AboutSite.vue';
 import ContentCreations from '../components/main-site/creations-site/ContentCreations.vue';
-import FooterComponent from "./footer-site/fc.vue";
+import FooterComponent from "./footer-site/FooterComponent.vue";
 </script>
 <template>
   <main class="main-container">
